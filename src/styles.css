@@ -1,7 +1,30 @@
 @media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
   header h1 {
     font-size: 48px;
   }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  section {
+    padding: 30px;
+  }
+}
+
+body {
+  font-family: "Poppins";
 }
 
 h1 {
@@ -55,4 +78,70 @@ header a {
 header a:hover {
   background-color: #8c7864;
   color: white;
+}
+
+footer {
+  color: white;
+  background-image: url(../images/desk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+footer h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-wth-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.info-box {
+  background-color: rgba(1, 1, 1, 0.3);
+  padding: 10px;
 }
